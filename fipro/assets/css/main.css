@@ -2,9 +2,9 @@
 -------------------------------------------------- */
 
 /*
-Theme Name : portofolioku
+Theme Name : comit.id
 Theme URL : http://khamad.ali21@gmail.com
-Description :Theme Website Portofolioku
+Description :Theme Website comit.id
 Author : Khamad Ali
 Author URL : http://khamad.ali21@gmail.com
 Version : 1.0
@@ -145,6 +145,23 @@ a:hover{
 
 code {
   font-size: 80%;
+}
+
+/* Main Content Page */
+.main-content-wrapper{
+	border:solid 1px;
+}
+
+.main-content-row{
+	border:1px solid;
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+}
+
+.main-content {
+	float:left;
+	border:solid 1px;
 }
 
 /* About page CSS */
