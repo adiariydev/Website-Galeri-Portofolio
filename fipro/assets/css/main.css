@@ -150,6 +150,7 @@ code {
 /* Main Content Page */
 .main-content-wrapper{
 	border:solid 1px;
+	margin:auto;
 }
 
 .main-content-row{
@@ -160,10 +161,14 @@ code {
 }
 
 .main-content {
-	float:left;
 	border:solid 1px;
+	margin:0 40px;
 }
 
+.col-md-3{
+	float:none;
+	display:inline-block;
+}
 /* About page CSS */
 
 .about {
