@@ -1,0 +1,158 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+/*
+Theme Name : portofolioku
+Theme URL : http://khamad.ali21@gmail.com
+Description :Theme Website Portofolioku
+Author : Khamad Ali
+Author URL : http://khamad.ali21@gmail.com
+Version : 1.0
+*/
+
+/*--------------------------------------------------------------
+1.0 - Reset
+--------------------------------------------------------------*/
+/*
+Stye of index.php
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  text-decoration:none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  font-weight: 700;
+  margin-bottom:10px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 13px;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+body {
+  background-size:cover;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  color: #454; 
+  font-family: 'Droid Serif', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body a {
+	color:#455;
+}
+a:hover{
+	text-decoration:none;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+#wrap > .container {
+  padding: 60px 15px 0;
+}
+.container .credit {
+  margin: 20px 0;
+}
+
+#footer > .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+/* About page CSS */
+
+.about {
+	width:60%;
+	margin:25px auto;
+}
+.about h1{
+	margin-bottom:30px;
+}
