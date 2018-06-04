@@ -1,45 +1,45 @@
 <!DOCTYPE>
 <html>
-    <head>
-        <title>My Web</title>
-        <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-    
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/FA/web-fonts-with-css/css/fontawesome-all.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
-		
-		<script>
-			var app = angular.module("myApp", ["ngRoute"]);
-			app.config(function($routeProvider) {
-				$routeProvider
-				.when("/", {
-					templateUrl : "partial/main.html"
-				})
-				.when("/about", {
-					templateUrl : "partial/about.html"
-				})
-				.when("/contact", {
-					templateUrl : "partial/contact.html"
-				});
+<head>
+	<title>My Web</title>
+	<link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/FA/web-fonts-with-css/css/fontawesome-all.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Poppins|Questrial|Roboto|Roboto+Condensed|Rubik" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+	
+	<script>
+		var app = angular.module("myApp", ["ngRoute"]);
+		app.config(function($routeProvider) {
+			$routeProvider
+			.when("/", {
+				templateUrl : "partial/main.html"
+			})
+			.when("/about", {
+				templateUrl : "partial/about.html"
+			})
+			.when("/contact", {
+				templateUrl : "partial/contact.html"
 			});
-		</script>
-	</head>
-    <body>
-        <div ng-app="myApp">
-			<div ng-include="'partial/header.html'"></div>
-            <div id="wrap">
-                <div ng-view></div>
-            </div>
-            <div ng-include="'partial/footer.html'"></div>
-        </div>
-        <script src="assets/vendors/jquery-3.2.1.min.js"></script>
-        <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-        <script src="assets/vendors/angular/angular.min.js"></script>
-        <script src="assets/vendors/angular/angular-route.min.js"></script>
-        <script src="assets/vendors/angular/angular-resource.min.js"></script>
-        <script src="assets/js/apps/main.js"></script>
-    </body>
+		});
+	</script>
+</head>
+<body>
+	<div ng-app="myApp">
+		<div ng-include="'partial/header.html'"></div>
+		<div id="wrap">
+			<div ng-view></div>
+		</div>
+		<div ng-include="'partial/footer.html'"></div>
+	</div>
+	<script src="assets/vendors/jquery-3.2.1.min.js"></script>
+	<script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/vendors/angular/angular.min.js"></script>
+	<script src="assets/vendors/angular/angular-route.min.js"></script>
+	<script src="assets/vendors/angular/angular-resource.min.js"></script>
+	<script src="assets/js/apps/main.js"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</body>
 </html>
