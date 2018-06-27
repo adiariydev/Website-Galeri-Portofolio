@@ -4,256 +4,58 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<meta name="description" itemprop="description" content="LOGIQUE menyediakan berbagai jasa pembuatan website dan aplikasi, SEO, pengoperasian media sosial, cetak kartu nama, desain profil perusahaan dan brosur.">
-	<meta name="keywords" content="buat website, pembuatan website, pembuat aplikasi, buat web, aplikasi android, digital marketing, web developer, desain web, seo, aplikasi iphone, kartu nama, profil perusahaan, logique">
-	<meta name="author" content="PT. Logique Digital Indonesia">
-	<meta property="og:title" content="Jasa Pembuatan Website, Web Sistem, dan Percetakan | LOGIQUE">
+	<meta name="description" itemprop="description" content="COMMIT menyediakan berbagai jasa pembuatan website dan aplikasi, SEO, pengoperasian media sosial, cetak kartu nama, desain profil perusahaan dan brosur.">
+	<meta name="keywords" content="buat website, pembuatan website, pembuat aplikasi, buat web, aplikasi android, digital marketing, web developer, desain web, seo, aplikasi iphone, kartu nama, profil perusahaan, COMMIT">
+	<meta name="author" content="PT. COMMIT Digital Indonesia">
+	<meta property="og:title" content="Jasa Pembuatan Website, Web Sistem, dan Percetakan | COMMIT">
 	<meta property="og:type" content="website">
-	<meta property="og:site_name" content="Logique">
-	<meta property="og:description" content="LOGIQUE menyediakan berbagai jasa pembuatan website dan aplikasi, SEO, pengoperasian media sosial, cetak kartu nama, desain profil perusahaan dan brosur.">
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<meta property="og:site_name" content="COMMIT">
+	<meta property="og:description" content="COMMIT menyediakan berbagai jasa pembuatan website dan aplikasi, SEO, pengoperasian media sosial, cetak kartu nama, desain profil perusahaan dan brosur.">
 	<title>Jasa Pembuatan Website Berkualitas | COMMIT</title>
-	<link rel="stylesheet" type="text/css" href="../assets/vendors/bootstrap/FA/web-fonts-with-css/css/fontawesome-all.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Poppins|Questrial|Roboto|Roboto+Condensed|Rubik" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/FA/web-fonts-with-css/css/fontawesome-all.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Poppins|Questrial|Roboto|Roboto+Condensed|Rubik" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Poppins|Questrial|Roboto|Roboto+Condensed|Rubik|Source+Sans+Pro|PT+Sans" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
 	
 	<script>
-		var app = angular.module("myApp", ["ngRoute"]);
+		var app = angular.module("Layanan", ["ngRoute"]);
 		app.config(function($routeProvider) {
 			$routeProvider
 			.when("/", {
-				templateUrl : "partial/main.html"
+				templateUrl : "partial/layanan.html"
 			})
 			.when("/about", {
 				templateUrl : "partial/about.html"
 			})
+			.when("/karir", {
+				templateUrl : "partial/karir.html"
+			})
+			.when("/portofolio", {
+				templateUrl : "partial/portofolio.html"
+			})
+			.when("/layanan", {
+				templateUrl : "partial/layanan.html"
+			})
 			.when("/contact", {
-				templateUrl : "partial/contact.html"
+				templateUrl : "contact-form/index.php"
 			});
 		});
 	</script>
+
 	
 </head>
 <body>
-<div ng-app="myApp">
-	<div ng-include="'partial/header.html'"></div>
-
-	<div class="panel-group" id="vacancy">
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<a id="imgHeader" data-toggle="collapse" href="#web" data-parent="#vacancy" class="collapsed">
-					<h2 class="panel-title">
-					<img src="assets/img/web.png" alt="Jasa Pembuatan Website" /> Jasa Pembuatan Website
-					<i class="fa fa-angle-right" aria-hidden="true"></i>
-					</h2>
-				</a>
-
-			</div>
-			<div id="web" class="panel-collapse collapse">
-				<div class="panel-body">
-					<ol class="fa-ul">
-						<li>
-						<i class="fa-li fa fa-caret-right"></i> <b>Website Perusahaan</b><br />
-						Kami memberikan layanan pembuatan website yang dapat secara efektif menyampaikan nilai perusahaan Anda secara profesional. Selain itu, kami juga menyediakan layanan pembelian domain, web server, SSL, layanan fotografi dan pembuatan video, serta pembuatan konten website sesuai kebutuhan Anda. Layanan yang kami berikan telah menjangkau bermacam-macam jenis usaha dan kami dapat mengembangkan website Anda hanya dalam satu bulan jika semuanya berjalan lancar. Kami dapat memberikan Anda solusi yang kreatif, fungsional, dan menarik sejalan dengan teknologi dan tren terkini di dunia online.
-						</li>
-						<li>
-						<i class="fa-li fa fa-caret-right"></i> <b>Website Multi Bahasa</b><br />
-						Website multi bahasa dengan kualitas tinggi akan membuat Anda secara efektif menggapai pelanggan dari berbagai belahan dunia. LOGIQUE juga menyediakan layanan pembuatan website multi bahasa dengan biaya yang terjangkau yang membuat Anda dapat terhubung dengan pelanggan di pasar lokal. Kami dapat mengembangkan halaman website yang ringan untuk bisa ditampilkan dengan cepat dengan koneksi Internet di Indonesia berikut dengan desain yang menarik untuk pasar Indonesia. Kami punya banyak pengalaman dalam mengembangkan website multi bahasa yang mencakup Bahasa Inggris, Indonesia, dan Jepang. Selain pembuatan website atau konten, Anda juga dapat menghubungi kami jika memerlukan jasa penerjemah atau perbaikan tata bahasa pada konten website Anda.
-						</li>
-						<li>
-						<i class="fa-li fa fa-caret-right"></i> <b>Website Layanan</b><br />
-						Kami dapat membantu Anda mulai dari perencanaan ide bisnis, pembuatan desain, pengembangan sistem sampai dengan pengelolaan website, jika Anda ingin mengembangkan layanan berbasis web seperti lelang mobil bekas online, sistem pengelolaan poin hadiah, website pencarian dan kecocokan SDM, portal berita, toko online, website komunitas tertutup, dan manajemen keanggotaan (CRM).
-						</li>
-						<li>
-						<i class="fa-li fa fa-caret-right"></i> <b>Website Karir</b><br />
-						Sekarang semakin sulit bagi perusahaan untuk mendapatkan karyawan ideal yang sesuai dan cocok dengan bisnis yang dijalankan. Halaman karir website perusahaan Anda adalah salah satu faktor penting untuk kesuksesan perekrutan. Halaman ini dapat menjadi kunci untuk memberitahu pengunjung tentang perusahaan Anda, suasana kerja, keuntungan bekerja diperusahaan Anda, dan karyawan yang Anda cari dengan jelas misalnya menggunakan video interview. Kami memiliki banyak pengalaman dalam pembuatan website yang terkait dengan rekrutmen atau halaman karir.
-						</li>
-						<li>
-						<i class="fa-li fa fa-caret-right"></i> <b>Website Restoran</b><br />
-						Kami menyediakan layanan pembuatan website untuk restoran yang dapat secara efektif membantu pemilik restoran menyampaikan informasi seputar restoran. Informasi tersebut dapat berupa menu terbaru, harga, kontak reservasi, lokasi, atau event yang berlangsung di restoran tersebut. Adanya website membantu mempromosikan restoran Anda tanpa henti 24/7.
-						</li>
-						<li>
-						<i class="fa-li fa fa-caret-right"></i> <b>Website Klinik Gigi</b><br />
-						Logique menyediakan layanan pembuatan website klinik gigi yang siap memberikan solusi digital untuk klinik gigi Anda. Website ini dapat secara efektif meningkatkan popularitas secara online serta membantu memudahkan pelanggan menemukan lokasi klinik Anda. Buatlah website sekarang dan dapatkan media promosi ke seluruh dunia setiap hari, setiap saat, bahkan saat Klinik Anda tutup.
-						</li>
-						<li>
-						<i class="fa-li fa fa-caret-right"></i> <b>Website dengan Desain Responsif </b><br />
-						Desain responsif merupakan suatu teknologi yang saat ini sedang populer, yang mampu membuat website Anda dapat dilihat dengan baik pada tampilan berukuran smartphone atau tablet. Hal ini sangat penting karena website di Indonesia mempunyai tingkat kunjungan yang sangat besar dari pengguna smartphone atau tablet, dan LOGIQUE dapat membantu Anda dengan pengalaman dan pengetahuan yang kami miliki terhadap teknologi responsif ini. Kami juga dapat membantu Anda mengelola website responsif yang tidak dibangun menggunakan kerangka bootstrap.
-						</li>
-						<li>
-						<i class="fa-li fa fa-caret-right"></i> <b>Halaman Landing / Kampanye</b><br />
-						Jika Anda mencari layanan untuk memperbaharui desain halaman landing / kampanye atau mengkonversi desain ke dalam kode HTML, LOGIQUE adalah solusi terbaik bagi Anda untuk mengembangkan website yang mudah digunakan dan teroptimasi pada mesin pencarian. Kami juga dapat mengembangkan beberapa halaman untuk memfasilitasi tes A/B yang meningkatkan konversi target Anda. Tim LOGIQUE memiliki pengalaman mendesain dan mengembangkan landing page dari berbagai macam bidang usaha. Desainer kami dapat dengan baik menyesuaikan halaman yang sudah ada berdasarkan pengalaman pengintegrasian plugin atau aplikasi seperti Mailchimp dan yang lainnya. Kami juga cukup fleksibel untuk memenuhi kebutuhan Anda seperti instalasi AMP, melakukan tes A/B dengan beberapa halaman landing, pembaharuan hanya pada halaman kontak, banner iklan dengan HTML5 untuk menunjang kampanye iklan website Anda, dan masih banyak lagi. Silakan menghubungi kami terkait pembuatan halaman landing / kampanye untuk produk atau layanan Anda, kami akan membantu Anda walaupun hanya satu halaman.
-						</li>
-						<li>
-						<i class="fa-li fa fa-caret-right"></i> <b>Blog</b><br />
-						LOGIQUE melayani instalasi dan kustomisasi Wordpress. Kami dapat mendesain, mengembangkan, dan meningkatkan keamanan blog Anda sesuai kebutuhan. Saat ini kami lihat ada banyak blog yang memiliki celah keamanan yang cukup signifikan, segera hubungi kami untuk memastikan dan meningkatkan keamanan Blog Anda.
-						</li>
-					</ol>
-				</div>
-			</div>
-		</div>
-	<div class="panel panel-default">
-		<div class="panel-heading">
-			<a data-toggle="collapse" data-parent="#vacancy" href="#digital-marketing" class="collapsed">
-				<h2 class="panel-title">
-				<img src="assets/img/seo.png" alt="Jasa Digital Marketing" /> Jasa Digital Marketing
-				<i class="fa fa-angle-right" aria-hidden="true"></i>
-				</h2>
-			</a>
-		</div>
-		<div id="digital-marketing" class="panel-collapse collapse">
-			<div class="panel-body">
-				<ol class="fa-ul">
-					<li>
-					<i class="fa-li fa fa-caret-right"></i> <b>SEO </b><br />
-					Kami berfokus pada hasil dengan tidak hanya mengimplementasikan metode SEO saja namun termasuk peningkatan atau perbaikan website itu sendiri. Kami punya banyak pengalaman SEO dalam bahasa Jepang, Indonesia, dan Inggris. Salah satu contoh hasil implementasi SEO kami adalah kami berhasil membuat dan mempertahankan satu klien (perusahaan finansial di Indonesia) pada posisi pertama halaman pencarian Google untuk waktu yang lama.</li>
-					<li>
-					<i class="fa-li fa fa-caret-right"></i> <b>Konsultasi Bisnis Digital</b><br />
-					Sebagai penasihat atau konsultan digital, kami akan membuat bisnis bersama dengan Anda. Kami dapat membantu Anda menciptakan bisnis baru atau mengembangkan bisnis Anda dengan memanfaatkan kekuatan Internet. </li>
-					 <li>
-					<i class="fa-li fa fa-caret-right"></i> <b>Pembuatan Konten Web</b><br />
-					LOGIQUE melayani pembuatan konten untuk website Anda seperti foto, video dan teks. Kami juga dapat membantu menerjemahkan konten yang Anda berikan ke dalam Bahasa Indonesia, Inggris, atau Jepang; serta melakukan pengambilan foto dengan fotografer atau drone melalui kerjasama dengan mitra kami. Penulis kami akan memberikan Anda konten yang cocok untuk SEO. </li>
-					<li>
-					<i class="fa-li fa fa-caret-right"></i> <b>Iklan</b><br />
-					Silakan menghubungi kami jika Anda memerlukan bantuan untuk meningkatkan jumlah prospek atau konversi dengan menggunakan iklan, strategi pemasaran digital, pemasaran melalui media social, dll. Kami akan menyediakan layanan yang efektif bagi Anda melalui kerjasama dengan mitra kami. </li>
-				</ol>
-			</div>
-		</div>
-	</div>
-	<div class="panel panel-default">
-		<div class="panel-heading">
-			<a id="imgHeader" data-toggle="collapse" data-parent="#vacancy" href="#mobile-app" class="collapsed">
-				<h2 class="panel-title">
-				<img src="assets/img/mobile-app.png" alt="Jasa Solusi Mobile" /> Jasa Solusi Mobile
-				<i class="fa fa-angle-right" aria-hidden="true"></i>
-				</h2>
-			</a>
-		</div>
-		<div id="mobile-app" class="panel-collapse collapse">
-			<div class="panel-body">
-				<ol class="fa-ul">
-					<li>
-					<i class="fa-li fa fa-caret-right"></i> <b>Pembuatan Website versi Mobile</b><br />
-					Sangat penting untuk menjangkau pengguna mobile dengan tepat karena kontribusi mereka terhadap tingkat kunjungan web di Indonesia sangat besar. LOGIQUE mengembangkan responsive website yang dapat mengoptimasi tampilan website (UI) sesuai dengan ukuran layar. Kami juga secara fleksibel dapat menawarkan dan mengimplementasikan penggunaan teknologi baru seperti PWA atau AMP.
-					</li>
-					<li>
-					<i class="fa-li fa fa-caret-right"></i> <b>Pengembangan Aplikasi Mobile</b><br />
-					Kami melayani pengembangan aplikasi Android/ iOS yang sesuai dengan pasar Indonesia. Tidak hanya merancang atau mengimplementasikan teknologi baru, tetapi kami juga mengoptimalkan UI dan UX, desain, pengembangan aplikasi, hingga membantu Anda mendaftarkan aplikasi ke App Store / Google Play. Sebuah layanan yang komprehensif untuk Anda.
-					</li>
-				</ol>
-			</div>
-		</div>
+	<div ng-app="Layanan">
+		<div ng-include="'partial/header.html'"></div>
+		<div ng-view></div>		
+		<div ng-include="'partial/footer.html'"></div>
 	</div>
 
-	<div class="panel panel-default">
-		<div class="panel-heading">
-			<a data-toggle="collapse" data-parent="#vacancy" href="#others" class="collapsed">
-				<h2 class="panel-title">
-				<img src="assets/img/others.png" alt="jasa pembuatan website lainnya" /> Jasa Lainnya
-				<i class="fa fa-angle-right" aria-hidden="true"></i>
-				</h2>
-			</a>
-		</div>
-		<div id="others" class="panel-collapse collapse">
-			<div class="panel-body">
-				<ol class="fa-ul">
-					<li>
-					<i class="fa-li fa fa-caret-right"></i> <b>Desain dan Pencetakan Profil Perusahaan/ Katalog / Selebaran</b><br />
-					LOGIQUE tidak hanya mampu mencetak pada media kertas untuk keperluan bisnis namun juga termasuk pembuatan tas, kaos, dan lain sebagainya. Layanan kami mencakup desain hingga pengiriman melalui kolaborasi dengan mitra perusahan percetakan kami. Silakan menghubungi kami jika Anda memerlukan bantuan terkait profil perusahaan, contoh selebaran untuk acara, atau produk promosi lainnya.
-					</li>
-					<li>
-					<i class="fa-li fa fa-caret-right"></i> <b>Agen Web Server dan Domain</b><br />
-					Kami dapat berperan sebagai agen untuk Anda mendapatkan domain .co.id (domain perusahaan Indonesia) serta melakukan konfigurasi DNS atau SSL. Selain itu, kami juga dapat menyewakan layanan server WEB seperti AWS untuk kebutuhan hosting Anda.
-					</li>
-					<li>
-					<i class="fa-li fa fa-caret-right"></i> <b>Konsultan Bisnis IT</b><br />
-					Kami menyediakan berbagai macam layanan konsultasi bisnis IT di Indonesia seperti konsultasi bagaimana IT dapat membantu pengoperasian bisnis Anda, pemilihan alat atau software IT yang tepat, pengetesan dan pengecekan keamanan sistem IT yang telah diimplementasikan, dukungan untuk pengembangan dan peluncuran bisnis Internet baru, dan masih banyak lagi.
-					</li>
-					<li>
-					<i class="fa-li fa fa-caret-right"></i> <b>Pengetesan Keamanan Website (VA Test)</b><br />
-					Kami dapat melakukan pengetesan dan melaporkan temuan-temuan kami terkait celah keamanan website Anda. Dengan mengetahui celah keamanan tersebut Anda dapat melakukan tindakan pencegahan dari tindak kejahatan digital seperti injeksi SQL, cross-site scripting, session jacking, dan lain-lain. Tim ahli kami akan melakukan tes dengan menggunakan alat-alat pemindaian serta menganalisa temuan-temuan untuk dituangkan ke dalam laporan. Layanan ini kami sediakan mulai dari 10,000,000 Rupiah.
-					<br><a target="_blank" href="layanan/penetration-testing/" class="btn btn-service-link">Lihat Informasi Lebih lanjut</a>
-					</li>
-				</ol>
-			</div>
-		</div>
-	</div>
-	</div>
-	<div class="clearfix"></div>
-	<!--<div class="workflow-container">
-	<div class="title-workflow">Proses Kerja LOGIQUE</div>
-	<div class="row">
-	<div class="col-md-5ths">
-	<div class="div-for-workflow">
-	<div class="valign-center">
-	<img src="img/planning.png" class="img-responsive center-block" alt="Planning pembuatan website" />
-	Planning
-	</div>
-	</div>
-	</div>
-	<div class="col-md-5ths">
-	<div class="div-for-workflow">
-	<div class="valign-center">
-	<img src="img/design.png" class="img-responsive center-block" alt="Design pembuatan website" />
-	Design
-	</div>
-	</div>
-	</div>
-	<div class="col-md-5ths">
-	<div class="div-for-workflow">
-	<div class="valign-center">
-	<img src="img/development.png" class="img-responsive center-block" alt="Development pembuatan website" />
-	Development
-	</div>
-	</div>
-	</div>
-	<div class="col-md-5ths">
-	<div class="div-for-workflow">
-	<div class="valign-center">
-	<img src="img/test.png" class="img-responsive center-block" alt="Test & Revision pembuatan website" />
-	Test & Revision
-	</div>
-	</div>
-	</div>
-	<div class="col-md-5ths">
-	<div class="div-for-workflow">
-	<div class="valign-center">
-	<img src="img/launch.png" class="img-responsive center-block" alt="Launching pembuatan website" />
-	Project Launching
-	</div>
-	</div>
-	</div>
-	</div>
-
-	</div>-->
-	
-	
-	<div ng-include="'partial/footer.html'"></div>
-</div>
-
-<script type="text/javascript">
-function toggle(showHideDiv, switchImgTag) {
-    var ele = document.getElementById(showHideDiv);
-    var imageEle = document.getElementById(switchImgTag);
-    if(ele.style.display == "block") {
-        ele.style.display = "none";
-    }
-    else {
-        ele.style.display = "block";
-    }   
-} 
-</script>
 </body>
 </html>
 
