@@ -4,14 +4,14 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<meta name="description" itemprop="description" content="COMMIT menyediakan berbagai jasa pembuatan website dan aplikasi, SEO, pengoperasian media sosial, cetak kartu nama, desain profil perusahaan dan brosur.">
-	<meta name="keywords" content="buat website, pembuatan website, pembuat aplikasi, buat web, aplikasi android, digital marketing, web developer, desain web, seo, aplikasi iphone, kartu nama, profil perusahaan, COMMIT">
-	<meta name="author" content="PT. COMMIT Digital Indonesia">
-	<meta property="og:title" content="Jasa Pembuatan Website, Web Sistem, dan Percetakan | COMMIT">
+	<meta name="description" itemprop="description" content="COMIT menyediakan berbagai jasa pembuatan website dan aplikasi, SEO, pengoperasian media sosial, cetak kartu nama, desain profil perusahaan dan brosur.">
+	<meta name="keywords" content="buat website, pembuatan website, pembuat aplikasi, buat web, aplikasi android, digital marketing, web developer, desain web, seo, aplikasi iphone, kartu nama, profil perusahaan, COMIT">
+	<meta name="author" content="PT. COMIT Digital Indonesia">
+	<meta property="og:title" content="Jasa Pembuatan Website, Web Sistem, dan Percetakan | COMIT">
 	<meta property="og:type" content="website">
-	<meta property="og:site_name" content="COMMIT">
-	<meta property="og:description" content="COMMIT menyediakan berbagai jasa pembuatan website dan aplikasi, SEO, pengoperasian media sosial, cetak kartu nama, desain profil perusahaan dan brosur.">
-	<title>Jasa Pembuatan Website Berkualitas | COMMIT</title>
+	<meta property="og:site_name" content="COMIT">
+	<meta property="og:description" content="COMIT menyediakan berbagai jasa pembuatan website dan aplikasi, SEO, pengoperasian media sosial, cetak kartu nama, desain profil perusahaan dan brosur.">
+	<title>Jasa Pembuatan Website Berkualitas | COMIT</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
@@ -21,6 +21,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Poppins|Questrial|Roboto|Roboto+Condensed|Rubik|Source+Sans+Pro|PT+Sans" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-animate.min.js"></script>
+	<script src="partial/IndexCtrl.js"></script>
 	
 	<script>
 		var app = angular.module("Layanan", ["ngRoute"]);
@@ -38,22 +40,18 @@
 			.when("/portofolio", {
 				templateUrl : "partial/portofolio.html"
 			})
-			.when("/layanan", {
-				templateUrl : "partial/layanan.html"
-			})
 			.when("/contact", {
 				templateUrl : "contact-form/index.php"
 			});
 		});
 	</script>
-
 	
 </head>
 <body>
 	<div ng-app="Layanan">
-		<div ng-include="'partial/header.html'"></div>
-		<div ng-view></div>		
-		<div ng-include="'partial/footer.html'"></div>
+			<div ng-include="'partial/header.html'"></div>
+			<div ng-view></div>			
+			<div ng-include="'partial/footer.html'"></div>
 	</div>
 
 </body>

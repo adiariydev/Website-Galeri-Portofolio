@@ -62,8 +62,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
     <div class="container">
-        <div class="contact text-center">
-            <h1>KONTAK</h1>
+        <div class="title">
+            <h1><span>Kontak</span> Kami</h1>
             <p>
 				Butuh bantuan? Anda dapat menghubungi kami melalui form berikut. 
 			</p>       

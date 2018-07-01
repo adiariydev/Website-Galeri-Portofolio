@@ -1,7 +1,14 @@
 <!DOCTYPE>
 <html>
 <head>
-	<title>Commit</title>
+	<meta name="description" itemprop="description" content="COMIT menyediakan berbagai jasa pembuatan website dan aplikasi, SEO, pengoperasian media sosial, cetak kartu nama, desain profil perusahaan dan brosur.">
+	<meta name="keywords" content="buat website, pembuatan website, pembuat aplikasi, buat web, aplikasi android, digital marketing, web developer, desain web, seo, aplikasi iphone, kartu nama, profil perusahaan, COMIT">
+	<meta name="author" content="PT. COMIT Digital Indonesia">
+	<meta property="og:title" content="Jasa Pembuatan Website, Web Sistem, dan Percetakan | COMIT">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="COMIT">
+	<meta property="og:description" content="COMIT menyediakan berbagai jasa pembuatan website dan aplikasi, SEO, pengoperasian media sosial, cetak kartu nama, desain profil perusahaan dan brosur.">	
+	<title>Jasa Pembuatan Website Berkualitas | COMMIT</title>
 	<link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<meta charset="utf-8">
@@ -9,7 +16,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Poppins|Questrial|Roboto|Roboto+Condensed|Rubik|Source+Sans+Pro|PT+Sans" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>	
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-animate.min.js"></script>
 	
 	<script>
 		var app = angular.module("Index", ["ngRoute"]);
@@ -36,47 +44,26 @@
 		});
 	</script>
 	
-	<script src="http://maps.googleapis.com/maps/api/js"></script>
-		<script>
-		function initialize() {
-		  var propertiPeta = {
-			center:new google.maps.LatLng(-8.5830695,116.3202515),
-			zoom:9,
-			mapTypeId:google.maps.MapTypeId.ROADMAP
-		  };
-		  
-		  var peta = new google.maps.Map(document.getElementById("googleMap"), propertiPeta);
-		  
-		  // membuat Marker
-		  var marker=new google.maps.Marker({
-			  position: new google.maps.LatLng(-8.5830695,116.3202515),
-			  map: peta
-		  });
-
+	<script>
+		function initMap() { 
+			var myLatLng = {lat: -7.760894, lng: 110.400075}; 
+			var map = new google.maps.Map(document.getElementById('map'), { zoom: 17, center: myLatLng }); 
+			var marker = new google.maps.Marker({ position: myLatLng, map: map, title: 'Hello World!' }); 
+			
 		}
+	</script>
 
-		// event jendela di-load  
-		google.maps.event.addDomListener(window, 'load', initialize);
-		</script>
-	
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-KRHcTaMvie3XfC0PRNIBvBKe4CGX1QY&callback=initMap">
+	</script>	
 </head>
 <body>
+
 	<div ng-app="Index">
-		
-		<div class="wrap">
 			<div ng-include="'partial/header.html'"></div>
 			<div ng-view></div>			
 			<div ng-include="'partial/footer.html'"></div>
-		</div>	
-
 	</div>
-
-	<script src="assets/vendors/jquery-3.2.1.min.js"></script>
-	<script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-	<script src="assets/vendors/angular/angular.min.js"></script>
-	<script src="assets/js/apps/main.js"></script>
-	<script src="assets/js/apps/slide-image-auto.js"></script>
-	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	
 </body>
 </html>

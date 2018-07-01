@@ -1,17 +1,29 @@
 <div class="container">
-	<div class="panel-group" id="vacancy">
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<a id="imgHeader" data-toggle="collapse" href="#web" data-parent="#vacancy" class="collapsed">
-					<h2 class="panel-title">
-					<img src="assets/img/web.png" alt="Jasa Pembuatan Website" /> Jasa Pembuatan Website
-					<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-					</h2>
-				</a>
-
+	<div class="expandcollapse-wrapper">
+		<div class="title">
+			<h1><span>Layanan</span> Kami</h1>
+			<p>
+			COMIT menyediakan layanan pembuatan sistem web berkualitas dengan standar internasional untuk aneka kebutuhan seperti E-Commerce, CRM, Sistem Lelang Online, Sistem Rekrutmen, dan CMS. Dengan pengalaman dan tim yang mahir di bidangnya, kami mampu menyediakan solusi sistem web dan website yang bermanfaat untuk bisnis digital Anda. COMIT juga menyediakan bermacam-macam jasa terkait website seperti jasa pembuatan website / sistem web, aplikasi mobile, digital marketing, jasa SEO, dan lain-lain. Kami mampu menyediakan solusi berkualitas yang sesuai kebutuhan bisnis Anda dengan harga yang terjangkau. 
+			</p>
+		</div>
+		<div class="title">
+			<h3>Pembuatan sistem web dan website berkualitas dengan standar Internasional</h3>
+		</div>
+		<div class="layanan-contact row text-center">
+			<div class="col-md-3">
+				<a href="#!contact" class="btn btn-primary layanan-contact-text">Hubungi Kami</a>
 			</div>
-			<div id="web" class="panel-collapse collapse">
-				<div class="panel-body">
+		</div>
+		<div class="expandcollapse">
+			<div class="expandcollapse-item">
+				<div class="col-md-3 main-content center-block">
+					<img src="assets/img/web.png">
+					<p>Jasa Pembuatan Website</p>
+					<button ng-click="active = !active" ng-class="{'expandcollapse-heading-collapsed': active, 'expandcollapse-heading-expanded': !active}" class="fa fa-arrow-circle-down" aria-hidden="true"></button>
+				</div>
+			</div>
+			<div id="web" ng-hide="!active">
+				<div class="expand-collapse-content">
 					<ol class="fa-ul">
 						<li>
 						<i class="fa-li fa fa-caret-right"></i> <b>Website Perusahaan</b><br />
@@ -53,17 +65,16 @@
 				</div>
 			</div>
 		</div>
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<a data-toggle="collapse" data-parent="#vacancy" href="#digital-marketing" class="collapsed">
-					<h2 class="panel-title">
-					<img src="assets/img/seo.png" alt="Jasa Digital Marketing" /> Jasa Digital Marketing
-					<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-					</h2>
-				</a>
+		<div class="expandcollapse">
+			<div class=" expandcollapse-item">
+				<div class="col-md-3 main-content center-block">
+					<img src="assets/img/web.png">
+					<p>Jasa Digital Marketing</p>
+					<button ng-click="active1 = !active1" ng-class="{'expandcollapse-heading-collapsed': active1, 'expandcollapse-heading-expanded': !active1}" class="fa fa-arrow-circle-down" aria-hidden="true"></button>
+				</div>
 			</div>
-			<div id="digital-marketing" class="panel-collapse collapse">
-				<div class="panel-body">
+			<div id="digital-marketing" ng-hide="!active1">
+				<div class="expand-collapse-content">
 					<ol class="fa-ul">
 						<li>
 						<i class="fa-li fa fa-caret-right"></i> <b>SEO </b><br />
@@ -82,17 +93,16 @@
 			</div>
 		</div>
 		
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<a id="imgHeader" data-toggle="collapse" data-parent="#vacancy" href="#mobile-app" class="collapsed">
-					<h2 class="panel-title">
-					<img src="assets/img/mobile-app.png" alt="Jasa Solusi Mobile" /> Jasa Solusi Mobile
-					<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-					</h2>
-				</a>
+		<div class="expandcollapse">
+			<div class=" expandcollapse-item">
+				<div class="col-md-3 main-content center-block">
+					<img src="assets/img/web.png">
+					<p>Jasa Solusi Mobile</p>
+					<button ng-click="active2 = !active2" ng-class="{'expandcollapse-heading-collapsed': active2, 'expandcollapse-heading-expanded': !active2}" class="fa fa-arrow-circle-down" aria-hidden="true"></button>
+				</div>
 			</div>
-			<div id="mobile-app" class="panel-collapse collapse">
-				<div class="panel-body">
+			<div id="mobile-app" ng-hide="!active2">
+				<div class="  expand-collapse-content">
 					<ol class="fa-ul">
 						<li>
 						<i class="fa-li fa fa-caret-right"></i> <b>Pembuatan Website versi Mobile</b><br />
@@ -107,17 +117,16 @@
 			</div>
 		</div>
 
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<a data-toggle="collapse" data-parent="#vacancy" href="#others" class="collapsed">
-					<h2 class="panel-title">
-					<img src="assets/img/others.png" alt="jasa pembuatan website lainnya" /> Jasa Lainnya
-					<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-					</h2>
-				</a>
+		<div class="expandcollapse">
+			<div class=" expandcollapse-item">
+				<div class="col-md-3 main-content center-block">
+					<img src="assets/img/web.png">
+					<p>Jasa Lainnya</p>
+					<button ng-click="active3 = !active3" ng-class="{'expandcollapse-heading-collapsed': active3, 'expandcollapse-heading-expanded': !active3}" class="fa fa-arrow-circle-down" aria-hidden="true"></button>
+				</div>
 			</div>
-			<div id="others" class="panel-collapse collapse">
-				<div class="panel-body">
+			<div id="others" ng-hide="!active3">
+				<div class="  expand-collapse-content">
 					<ol class="fa-ul">
 						<li>
 						<i class="fa-li fa fa-caret-right"></i> <b>Desain dan Pencetakan Profil Perusahaan/ Katalog / Selebaran</b><br />
@@ -134,11 +143,37 @@
 						<li>
 						<i class="fa-li fa fa-caret-right"></i> <b>Pengetesan Keamanan Website (VA Test)</b><br />
 						Kami dapat melakukan pengetesan dan melaporkan temuan-temuan kami terkait celah keamanan website Anda. Dengan mengetahui celah keamanan tersebut Anda dapat melakukan tindakan pencegahan dari tindak kejahatan digital seperti injeksi SQL, cross-site scripting, session jacking, dan lain-lain. Tim ahli kami akan melakukan tes dengan menggunakan alat-alat pemindaian serta menganalisa temuan-temuan untuk dituangkan ke dalam laporan. Layanan ini kami sediakan mulai dari 10,000,000 Rupiah.
-						<br><a target="_blank" href="layanan/penetration-testing/" class="btn btn-service-link">Lihat Informasi Lebih lanjut</a>
+						<br><a target="_blank" href="layanan/penetration-testing/" class="btn btn-service-link">Lihat Informasi Lebih lanjut</button>
 						</li>
 					</ol>
 				</div>
 			</div>
 		</div>
+		
+		<div class="row text-center">
+			<span class=""><h3>Jika Anda memiliki kebutuhan untuk:</h3></span><br>
+			<div class="list-on-services">
+			<ul class="fa-ul">
+			<li><i class="fa-li fa fa-check"></i> Membuat sebuah website</li>
+			<li><i class="fa-li fa fa-check"></i> Memperbaharui atau mengupdate website</li>
+			<li><i class="fa-li fa fa-check"></i> Pengembangan sistem web seperti E-Commerce, CRM, Sistem Lelang Online, CMS, dll</li>
+			<li><i class="fa-li fa fa-check"></i> Membuat desain halaman kampanye atau landing page website </li>
+			<li><i class="fa-li fa fa-check"></i> Melakukan outsourcing untuk operasional website</li>
+			<li><i class="fa-li fa fa-check"></i> Meningkatkan jumlah akses ke website Anda dengan SEO</li>
+			<li><i class="fa-li fa fa-check"></i> Mengatur dan menjalankan strategi promosi online</li>
+			<li><i class="fa-li fa fa-check"></i> Mencari penyewaan web server dan perusahaan untuk mengelolanya</li>
+			<li><i class="fa-li fa fa-check"></i> Mencari jasa percetakan untuk profil perusahaan atau brosur</li>
+			<li><i class="fa-li fa fa-check"></i> dll.</li>
+			</ul>
+			</div>
+			<br>
+			<h3>COMIT siap membantu Anda.</h3>
+			<div class="row text-center">
+				<div class="col-md-3">
+					<a href="#!contact" class="btn btn-primary layanan-contact-text">Hubungi Kami</a>
+				</div>
+			</div>
+		</div>
+		
 	</div>
 </div>
